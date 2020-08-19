@@ -15,6 +15,11 @@ body,html
     top: 0;
     background: linear-gradient(to right , rgba(207, 35, 77, 1) 40%,rgb(206, 52, 255) 55%);
 }
+.navbar .navbar-brand span
+{
+    color: #10ee10;
+    font-size: 30px;
+}
 .nav-item a
 {
     color: #000 !important;
@@ -27,6 +32,10 @@ body,html
 .navbar-brand:hover
 {
     color: #10ee10 !important;
+}
+.gallery
+{
+    display: inline-block;
 }
 
 /************************** banner area css*******************************/
@@ -443,6 +452,20 @@ h5.footer-content
     {
         font-size: 20px;
         font: 700;
+    }
+    .subscribe-area
+    {
+        width: 100vh !important;
+    }
+    .subscribe-area .btn
+    {
+        padding-left: 20px;
+    }
+    .experience-area
+    {
+        width: 100vh !important;
+        margin-left: 0 !important;
+        padding-left: 0 !important;
     }
     .footer .lead
     {

@@ -25,4 +25,80 @@ $(document).ready(function(){
 		}
     });
 
+    //navbar modification
+    
+    $(".nav-link").click(function()
+    {
+        $(".navbar-toggler").click();
+    });
+
+    /*
+    ------------------ OTHER WAY FOR HINDING THIS NAV-LINKS----------------
+    $('.nav-link').click(function(){
+        $('.navbar-collapse').collapse('hide');
+    });
+    */
+
+    //dropdown menu
+
+    $("#upcoming").click(function(){
+        $btn.click();
+    });
+
+    $("#following").click(function(){
+        
+        $(".button-group button").removeClass("active");
+        $(".dwfollowing").addClass("active");
+
+        let fselector = $(".dwfollowing").attr("data-filter");
+        $(".grid").isotope({
+            filter: fselector
+        });
+        
+        return false;
+
+    });
+
+    $("#latest").click(function(){
+        
+        $(".button-group button").removeClass("active");
+        $(".dwlatest").addClass("active");
+
+        let fselector = $(".dwlatest").attr("data-filter");
+        $(".grid").isotope({
+            filter: fselector
+        });
+        
+        return false;
+
+    });
+
+    $("#popular").click(function(){
+        
+        $(".button-group button").removeClass("active");
+        $(".dwpopular").addClass("active");
+
+        let fselector = $(".dwpopular").attr("data-filter");
+        $(".grid").isotope({
+            filter: fselector
+        });
+        
+        return false;
+
+    });
+
+    $("#all").click(function(){
+        
+        $(".button-group button").removeClass("active");
+        $(".dwall").addClass("active");
+
+        let fselector = $(".dwall").attr("data-filter");
+        $(".grid").isotope({
+            filter: fselector
+        });
+        
+        return false;
+
+    });
+
 });

@@ -12,11 +12,11 @@
 </head>
 <body>
 
-	<! navigation bar >
+	<!----------------------navigation bar-------------------------------> 
     
     <section id="nav-bar">
         <nav class="navbar navbar-expand-lg navbar-light text-uppercase">
-            <a class="navbar-brand font-weight-bold" href="#">KRISHN</a>
+            <a class="navbar-brand font-weight-bold" href="https://github.com/krishn-web"><span>K</span>RISHN</a>
             <button class="navbar-toggler ml-auto bg-light" type="button" data-target="#navbarNav" data-toggle="collapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -33,7 +33,16 @@
                         <a class="nav-link" href="#service-div">Service</a>
                     </li>
                     <li class="nav-item ml-4">
-                        <a class="nav-link" href="#galler-area">PORIFOUD</a>
+                        <div class="dropdown">
+                            <a class="nav-link gallery" href="#gallery-area">gallery</a>
+                            <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                            <div class="dropdown-menu text-center">
+                                <a class="dropdown-item nav-link" href="#gallery-area" id="all">all</a>
+                                <a class="dropdown-item nav-link" href="#gallery-area" id="popular">popular</a>
+                                <a class="dropdown-item nav-link" href="#latest-area" id="latest">latest</a>
+                                <a class="dropdown-item nav-link" href="#gallery-area" id="following">following</a>
+                                <a class="dropdown-item nav-link" href="#gallery-area" id="upcoming">upcoming</a>
+                        </div>
                     </li>
                     <li class="nav-item ml-4">
                         <a class="nav-link" href="#clients">PAGES</a>
@@ -49,7 +58,7 @@
         </nav>
     </section>
 
-    <!--**************** banner area******************--> 
+    <!--**************** banner area******************-->
 
     <section class="site-banner">
         <div class="container">
@@ -213,7 +222,7 @@
                 <div class="col-md-3 col-6 service-box text-center bg-light">
                     <img src="img/img4.jpg" alt="">
                     <h2 class="text-uppercase">wp developer</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati voluptates laboriosam eligendi iusto, sunt assumenda.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, quia. Architecto qui in quidem officia?</p>
                 </div>
             </div>
         </div>
@@ -221,7 +230,7 @@
 
     <!--****************gallery area ******************-->
 
-    <section class="gallery-area" id="galler-area">
+    <section class="gallery-area" id="gallery-area">
         <div class="container">
             <div class="project-title pb-5">
                 <h1 class="text-uppercase title-h1">recently done project</h1>
@@ -229,10 +238,10 @@
             </div>
         
             <div class="button-group">
-                <button class="text-uppercase active">ALL</button>
-                <button class="text-uppercase" data-filter=".popular">popular</button>
-                <button class="text-uppercase" data-filter=".latest">latest</button>
-                <button class="text-uppercase" data-filter=".following">following</button>
+                <button class="text-uppercase active dwall">ALL</button>
+                <button class="text-uppercase dwpopular" data-filter=".popular">popular</button>
+                <button class="text-uppercase dwlatest" data-filter=".latest">latest</button>
+                <button class="text-uppercase dwfollowing" data-filter=".following">following</button>
                 <button class="text-uppercase" data-filter=".upcoming">upcoming</button>
             </div>
 
@@ -535,7 +544,7 @@
                 <li><a href="https://www.facebook.com/krishn.patel.182" class="fa fa-facebook-official" aria-hidden="true"></a></li>
                 <li><a href="https://www.instagram.com/patel_kisu_212/" class="fa fa-instagram" aria-hidden="true"></a></li>
             </ul>
-            <p class="lead">copyright@ KrishnPatel</p>
+            <p class="lead">copyright@KrishnPatel</p>
         </div>
     </footer>
 
