@@ -455,7 +455,7 @@ h5.footer-content
     }
     .subscribe-area
     {
-        width: 100vh !important;
+        width: 20rem !important;
     }
     .subscribe-area .btn
     {
@@ -463,7 +463,7 @@ h5.footer-content
     }
     .experience-area
     {
-        width: 100vh !important;
+        width: 20rem !important;
         margin-left: 0 !important;
         padding-left: 0 !important;
     }
