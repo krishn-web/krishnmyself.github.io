@@ -36,11 +36,11 @@
                         <div class="dropdown">
                             <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
                             <div class="dropdown-menu text-center">
-                                <a class="dropdown-item nav-link" href="#gallery-area" id="all">all</a>
-                                <a class="dropdown-item nav-link" href="#gallery-area" id="popular">popular</a>
-                                <a class="dropdown-item nav-link" href="#latest-area" id="latest">latest</a>
-                                <a class="dropdown-item nav-link" href="#gallery-area" id="following">following</a>
-                                <a class="dropdown-item nav-link" href="#gallery-area" id="upcoming">upcoming</a>
+                                <a class="dropdown-item nav-link" id="all" href="#gallery-area">all</a>
+                                <a class="dropdown-item nav-link" id="popular" href="#gallery-area">popular</a>
+                                <a class="dropdown-item nav-link" id="latest" href="#gallery-area">latest</a>
+                                <a class="dropdown-item nav-link" id="following" href="#gallery-area">following</a>
+                                <a class="dropdown-item nav-link" id="upcoming" href="#gallery-area">upcoming</a>
                             </div>
                             <a class="nav-link gallery" href="#gallery-area">gallery</a>
                         </div>
@@ -170,7 +170,7 @@
                         <div class="d-felx flex-row years-area">
                             <div class="row">
                                 <div class="col-4">
-                                    <h2 class="p-3 years">
+                                    <h2 class="p-md-3 years">
                                         <span class="y10">10</span>
                                     </h2>
                                 </div>
@@ -523,7 +523,7 @@
             <div class="row text-center">
                 <div class="col-12">
                     <h3 class="text-uppercase">subscribe us</h3>
-                    <p class="text-light">Follow me on facebook or instagram , i will surely help you and give reply . You can ask any quesion related to web-site developer.</p>
+                    <p class="text-dark">Follow me on facebook or instagram , i will surely help you and give reply . You can ask any quesion related to web-site developer.</p>
                     <form class="form-inline justify-content-center">
                         <div class="form-group mx-sm-3 mb-2">
                             <input type="email" class="form-control" placeholder="enter your email id">
@@ -547,7 +547,12 @@
             </ul>
             <p class="lead">copyright@KrishnPatel</p>
         </div>
+
     </footer>
+
+    <div class="scrolltop float-right">
+        <i class="fa fa-arrow-up" onclick="topFunction()" id="mybtn"></i>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
@@ -555,5 +560,34 @@
     <script src="isotope.js"></script>
     <script src="main.js"></script>
     <script src="Magnific-Popup-master/dist/jquery.magnific-popup.js"></script>
+    <script src="js/waypoint/src/waypoint.js"></script>
+    <script src="js/jquery.counterup.js"></script>
+
+    <script type="text/javascript">
+
+        mybutton = document.getElementById("mybtn");
+
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction()
+        {
+            if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20)
+            {
+                mybutton.style.display = "block" ;
+            }
+            else
+            {
+                mybutton.style.display = "none" ;
+            }
+        }
+
+        function topFunction()
+        {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+    </script>
+
 </body>
 </html>

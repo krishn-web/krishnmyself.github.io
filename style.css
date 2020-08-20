@@ -17,7 +17,7 @@ body,html
 }
 .navbar .navbar-brand span
 {
-    color: #10ee10;
+    color: rgb(62, 62, 241);
     font-size: 30px;
 }
 .nav-item a
@@ -31,7 +31,7 @@ body,html
 }
 .navbar-brand:hover
 {
-    color: #10ee10 !important;
+    color: rgb(62, 62, 241) !important;
 }
 .gallery
 {
@@ -272,7 +272,7 @@ body,html
 {
     width: 100%;
     height: 400px;
-    background: linear-gradient(to right , #610870 10%, #ca4de0 55%);
+    background: linear-gradient(to right , #07e3f3 10%, #8caab6 55%);
 }
 .sub-sec .row
 {
@@ -335,6 +335,23 @@ h5.footer-content
     top: 50% !important;
     left: 50% !important;
 }
+#mybtn
+{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    border: none;
+    color: white;
+    background-color: #00abff;
+    padding: 10px;
+    border-radius: 10px;
+}
+#mybtn:hover
+{
+    background-color: #606060;
+    cursor: pointer;
+}
 
 /************************** media query part css*******************************/
 @media(max-width:992px)
@@ -346,6 +363,10 @@ h5.footer-content
     .about-title
     {
         text-align: right !important;
+    }
+    .service-box h2
+    {
+        font-size: 25px;
     }
 }
 @media(max-width:768px)
@@ -407,7 +428,11 @@ h5.footer-content
     {
         font-size: 15px;
     }
-    
+    #mybtn
+    {
+        bottom: 10px;
+        right: 20px;
+    }   
 }
 @media(max-width:576px)
 {
@@ -470,6 +495,10 @@ h5.footer-content
     .footer .lead
     {
         font-size: 10px;
-        background-color: #c3c3c3;
+        padding-right: 30px;
+    }
+    .sub-sec
+    {
+        height: 430px ;
     }
 }
